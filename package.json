@@ -1,6 +1,6 @@
 {
   "name": "react--customizable-chat-bot",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "React Customizable Chat Bot Component",
   "license": "MIT",
   "author": {
@@ -23,6 +23,16 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "keywords": [
+    "react",
+    "chat-bot",
+    "chatbot",
+    "bot",
+    "html",
+    "customizable",
+    "styled-components",
+    "enterprise-bot"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
