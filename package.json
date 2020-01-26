@@ -33,6 +33,11 @@
     "styled-components",
     "enterprise-bot"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chithakumar13/react-chat-bot.git"
+  },
+  "homepage": "https://chithakumar13.github.io/bot-example",
   "eslintConfig": {
     "extends": "react-app"
   },
