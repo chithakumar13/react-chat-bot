@@ -5,7 +5,9 @@
 **Comes with 5 predefined styles and you can define your own styles as well**
 
 ## **Installation**
+```
 npm install react--customizable-chat-bot or Yarn add  react--customizable-chat-bot
+```
  
 ## **Usage**
 
