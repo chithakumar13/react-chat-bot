@@ -1,7 +1,6 @@
 ***Build your own chatbot with minimal changes***
 
 **Live Demo [live demo](https://chithakumar13.github.io/bot-example)**
-**Real life implementation as [Icalia Labs](http://www.icalialabs.com) Virtual Sales Assisstant [here](http://quotient.icalialabs.com)**
 
 **Comes with 5 predefined styles and you can define your own styles as well**
 
@@ -10,7 +9,7 @@ npm install react--customizable-chat-bot or Yarn add  react--customizable-chat-b
  
 ## **Usage**
 
-List of questions to be asked by bot the can be passed . Take a look at example questions structure here `src/config/Question/Questionnare.ts`
+List of questions to be asked by bot the can be passed . Take a look at example questions structure [here!](`src/config/Question/Questionnare.ts`)
 
 ```
 import { Bot, BotConfig } from 'react--customizable-chat-bot'
@@ -18,14 +17,6 @@ import { Bot, BotConfig } from 'react--customizable-chat-bot'
 BotConfig has some default set of questions and styles which you can override
 
 ```
-const dateReg = /^\d{2}[./-]\d{2}[./-]\d{4}$/;
-const dateRegNeg = /^((?!\d{2}[./-]\d{2}[./-]\d{4}).)*$/;
-const validateEmail = (email: string) => {
-    var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
-const validateEmailNeg = (email: string) => { return !validateEmail(email) }
-
 BotConfig.questions = [{'dob': {
             id: 1,
             message: "What's your Date of Birth (DD/MM/YYYY)?",
