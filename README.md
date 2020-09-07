@@ -9,7 +9,7 @@ npm install react--customizable-chat-bot or Yarn add  react--customizable-chat-b
  
 ## **Usage**
 
-List of questions to be asked by bot the can be passed . Take a look at example questions structure [here!](`src/config/Question/Questionnare.ts`)
+List of questions to be asked by bot the can be passed . Take a look at example questions structure [here!]`src/config/Question/Questionnare.ts`
 
 ```
 import { Bot, BotConfig } from 'react--customizable-chat-bot'
