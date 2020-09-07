@@ -18,6 +18,7 @@ interface IBotState {
 interface IBotProps {
     config: IBotConfig;
     customStyles?: IStyles;
+    onConversationEnd : Function;
 }
 
 export default class Bot extends Component<IBotProps, IBotState> {
@@ -74,7 +75,7 @@ export default class Bot extends Component<IBotProps, IBotState> {
                     if (botResponse && botResponse.message)
                         updatedMessage = [...updatedMessage, botResponse]
                     if (nextQuestion.handlers.length === 0)
-                        console.log(generateJsonFromMessage(this.state.messages));
+                        this.props.onConversationEnd(generateJsonFromMessage(this.state.messages));
                     return { messages: updatedMessage, currentBotMessage: nextQuestion, isTyping: this.resetTyping('bot') };
                 })
             }, 400)

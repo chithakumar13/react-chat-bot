@@ -14,7 +14,13 @@ List of questions to be asked by bot the can be passed . Take a look at example 
 ```
 import { Bot, BotConfig } from 'react--customizable-chat-bot'
 ```
-BotConfig has some default set of questions and styles which you can override
+BotConfig has some default set of questions and styles which you can override.
+
+## **Adding Validators to user response**
+If you need to validate user response , under each question we have a handlers where you can pass validators to validate user response and drive the chat accordingly.
+
+Validators can either be a regex or a function which returns boolean
+
 
 ```
 BotConfig.questions = [{'dob': {
@@ -95,6 +101,16 @@ const myStyles: IStyles = {
 export const MyFunc() => <Bot config={BotConfig}  customStyles={myStyles}/>
 ```
 
+You should pass a function to onConversationEnd props of Bot component to get the conversation data which we will a json string
 
+```
+import { Bot, BotConfig } from 'react--customizable-chat-bot' 
+
+const onConversationEnd = (converstationData : string ) => {
+    console.log(converstationData);
+}
+
+export const MyFunc() => <Bot config={BotConfig}  onConversationEnd={onConversationEnd}/>
+```
 
 
