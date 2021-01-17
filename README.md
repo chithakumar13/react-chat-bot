@@ -114,5 +114,5 @@ const onConversationEnd = (converstationData : string ) => {
 
 export const MyFunc() => <Bot config={BotConfig}  onConversationEnd={onConversationEnd}/>
 ```
-
-
+## For more help / settings
+<a href="https://discord.gg/qkkW7KFxCV">Join the CK Algos Discord</a> 
